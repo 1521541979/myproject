@@ -1,0 +1,80 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--jquery easyui> <![endif]-->
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="jquery-easyui-1.4/demo/demo.css">
+	<script type="text/javascript" src="jquery-easyui-1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-easyui-1.4/jquery.easyui.min.js"></script>
+	<!--bootstrap插件> <![endif]-->
+	<link href="bootatrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootatrap/js/jquery.js"></script>
+    <script src="bootatrap/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+</head>
+<?php include template('member', 'header'); ?>
+<body >
+<div style="margin-left:270px;">
+    <h2>2014中国包装创意设计大赛
+</h2>
+    <div style="margin:20px 0;"></div>
+    <div class="easyui-panel" title="2014’中国包装创意设计大赛
+" style="width:800px">
+        <div style="padding:10px 60px 20px 60px">
+        
+        <form method="post" action="" id="myform">
+            <table cellpadding="5">
+               
+                <tr>
+                    <td>姓名:</td>
+                    <td><input class="easyui-textbox" type="text" name="username" data-options="required:true"></td>
+                     
+                </tr>
+                           
+                    <td>手机:</td>
+                    <td><input class="easyui-textbox" type="text" name="phone" data-options="required:true"></input></td>
+                </tr>
+                <tr>
+                    <td>QQ:</td>
+                    <td><input class="easyui-textbox" type="text" name="qq" data-options="required:true"></input></td>
+                </tr>
+                <tr>
+                   
+               
+            </table>
+             <div class="submit"><input type="submit" name="bmsubmit" value="提交"></div>
+        </form>
+        <div style="text-align:center;padding:5px">
+            
+     
+        </div>
+        </div>
+    </div>
+    <script>
+        function submitForm(){
+            $('#ff').form('submit');
+        }
+        function clearForm(){
+            $('#ff').form('clear');
+        }
+    </script>
+    </div>
+</body>
+
+<?php include template('member', 'footer'); ?>
+</html>
+
+
+
+
+
+
+
+
+
+
+
